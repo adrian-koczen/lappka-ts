@@ -1,0 +1,30 @@
+@use "styles/_variables" as v;
+
+.container {
+  position: relative;
+  margin: 10px 0;
+  @media only screen and (min-width: 640px) {
+    margin: 13px 0;
+  }
+  .input {
+    width: 100%;
+    padding: 17px;
+    padding-left: 40px;
+    border-radius: 10px;
+    border: 1px solid v.$gray;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: v.$dark;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .icon {
+    display: inline;
+    position: absolute;
+    top: 17px;
+    left: 10px;
+  }
+}
